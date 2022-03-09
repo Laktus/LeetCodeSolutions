@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ID_435NonOverlappingIntervals {
+public class ID435_NonOverlappingIntervals {
     public static void main(String... args) {
         int[][] intervals = {{1, 2}, {1, 2}, {1, 2}};
         eraseOverlapIntervals(intervals);
