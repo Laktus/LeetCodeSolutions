@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class ID435_NonOverlappingIntervals {
     public static void main(String... args) {
@@ -7,7 +8,7 @@ public class ID435_NonOverlappingIntervals {
     }
 
     public static int eraseOverlapIntervals(int[][] intervals) {
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
 
         int result = 0;
         int i = 0;
